@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule (^|/)(\.git|\.local-tools)(/|$) - [F,L]
+RewriteRule ^(local-access\.txt|wp-cli\.phar|check-.*\.py|start-local\.ps1|router\.php|.*\.log|.*\.zip)$ - [F,L]
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>

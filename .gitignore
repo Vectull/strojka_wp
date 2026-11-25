@@ -2,6 +2,7 @@
 /*
 !/.gitignore
 !/.gitattributes
+!/.htaccess
 !/README.md
 !/start-local.ps1
 !/router.php

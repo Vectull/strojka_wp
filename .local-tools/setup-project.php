@@ -15,7 +15,7 @@ foreach ($data['posts'] as $item) {
     if (is_wp_error($id)) { throw new Exception($id->get_error_message()); }
     update_post_meta($id, '_strojka_source_key', $item['source_key']);
     foreach ($item['meta'] as $key => $value) {
-        $field = str_starts_with($key, 'service_') ? 'field_strojka_' . substr($key, 8) : (str_starts_with($key, 'fact_') ? 'field_strojka_' . $key : 'field_' . $key);
+        $field = str_starts_with($key, 'service_') ? 'field_strojka_' . substr($key, 8) : ((str_starts_with($key, 'fact_') || str_starts_with($key, 'seo_')) ? 'field_strojka_' . $key : 'field_' . $key);
         update_field($field, $value, $id);
     }
     if (!empty($item['image_asset'])) {
@@ -45,4 +45,7 @@ if (!has_nav_menu('primary')) {
 }
 update_option('strojka_facts_seeded', 1);
 update_option('strojka_services_migrated', 1);
+update_option('permalink_structure', '/%postname%/');
+update_option('WPLANG', 'ru_RU');
+flush_rewrite_rules(false);
 echo "Project content restored.\n";

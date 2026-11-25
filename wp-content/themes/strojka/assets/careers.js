@@ -1,3 +1,12 @@
+document.querySelectorAll('[data-job]').forEach(link => {
+  link.addEventListener('click', () => {
+    const message = document.querySelector('.jobs-application [name="message"]');
+    if (message && (!message.value.trim() || message.dataset.prefilled === message.value)) {
+      message.value = `Специальность: ${link.dataset.job}\nОпыт: `;
+      message.dataset.prefilled = message.value;
+    }
+  });
+});
 const careersDialog = document.querySelector('#careers-dialog');
 if (careersDialog) {
   document.querySelectorAll('.careers-apply').forEach(button => {

@@ -4,8 +4,8 @@ if (!defined('ABSPATH')) { exit; }
 add_action('init', function () {
     register_post_type('strojka_service', [
         'labels' => ['name' => 'Услуги', 'singular_name' => 'Услуга', 'add_new' => 'Добавить услугу', 'add_new_item' => 'Добавить услугу', 'edit_item' => 'Редактировать услугу', 'all_items' => 'Все услуги'],
-        'public' => false, 'show_ui' => true, 'menu_icon' => 'dashicons-images-alt2',
-        'supports' => ['title'], 'delete_with_user' => false,
+        'public' => true, 'show_ui' => true, 'has_archive' => false, 'rewrite' => ['slug' => 'uslugi', 'with_front' => false], 'menu_icon' => 'dashicons-images-alt2',
+        'supports' => ['title', 'editor'], 'delete_with_user' => false,
     ]);
 });
 

@@ -14,7 +14,7 @@ try:
         page.locator('.careers-banner').screenshot(path='.local-tools/careers-desktop.png')
         page.locator('.careers-secondary').click()
         page.wait_for_load_state('networkidle')
-        assert page.get_by_role('heading', name='Вакансии', exact=True).count() == 1
+        assert 'Вакансии' in page.locator('.jobs-hero h1').inner_text()
         page.goto('http://127.0.0.1:8085/', wait_until='networkidle')
         page.set_viewport_size({'width': 390, 'height': 844})
         page.locator('.careers-banner').screenshot(path='.local-tools/careers-mobile.png')

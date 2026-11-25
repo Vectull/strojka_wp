@@ -6,7 +6,7 @@ foreach ($posts as $post) {
     if ($post->post_type === 'page' && $post->post_name === 'sample-page') { continue; }
     $item = ['source_key' => 'strojka-' . $post->ID, 'type' => $post->post_type, 'slug' => $post->post_name, 'title' => $post->post_title, 'content' => str_replace(home_url(), '{{SITE_URL}}', $post->post_content), 'order' => $post->menu_order, 'meta' => []];
     foreach (get_post_meta($post->ID) as $key => $values) {
-        if (preg_match('/^(service_|fact_|careers_)/', $key) && $key !== 'service_image') {
+        if (preg_match('/^(service_|fact_|careers_|seo_)/', $key) && $key !== 'service_image' && $key !== 'seo_image') {
             $item['meta'][$key] = get_post_meta($post->ID, $key, true);
         }
     }
@@ -18,7 +18,7 @@ foreach ($posts as $post) {
     $result['posts'][] = $item;
 }
 foreach (get_theme_mods() as $key => $value) {
-    if (str_starts_with($key, 'strojka_')) { $result['theme_mods'][$key] = $value; }
+    if (str_starts_with($key, 'strojka_') && $key !== 'strojka_yandex_maps_key') { $result['theme_mods'][$key] = $value; }
 }
 $locations = get_nav_menu_locations();
 foreach (wp_get_nav_menu_items($locations['primary'] ?? 0) ?: [] as $item) {
