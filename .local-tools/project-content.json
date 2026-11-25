@@ -1,0 +1,155 @@
+{
+    "posts": [
+        {
+            "source_key": "strojka-7",
+            "type": "strojka_service",
+            "slug": "%d0%b4%d0%be%d0%bc%d0%b0-%d0%b4%d0%bb%d1%8f-%d0%b6%d0%b8%d0%b7%d0%bd%d0%b8",
+            "title": "Дома для жизни",
+            "content": "",
+            "order": 0,
+            "meta": {
+                "service_tag": "Строительство",
+                "service_description": "Создаём пространство, в которое хочется возвращаться.",
+                "service_features": "Подбор конструктивного решения\nВозведение коробки и кровли\nПоэтапная сдача работ",
+                "service_button": "Обсудить проект",
+                "service_link": "#request",
+                "service_order": "0",
+                "service_badge": "Смета до начала работ",
+                "service_extra_label": "Условия работ",
+                "service_extra_value": "По договору"
+            },
+            "image_asset": "service-house.jpg"
+        },
+        {
+            "source_key": "strojka-8",
+            "type": "strojka_service",
+            "slug": "%d1%84%d1%83%d0%bd%d0%b4%d0%b0%d0%bc%d0%b5%d0%bd%d1%82%d1%8b-%d0%b8-%d0%b7%d0%b5%d0%bc%d0%bb%d1%8f%d0%bd%d1%8b%d0%b5-%d1%80%d0%b0%d0%b1%d0%be%d1%82%d1%8b",
+            "title": "Фундаменты и земляные работы",
+            "content": "",
+            "order": 1,
+            "meta": {
+                "service_tag": "Основание",
+                "service_description": "Начинаем с главного — прочной основы будущего дома.",
+                "service_features": "Подготовка и планировка участка\nРазработка котлована\nУстройство фундамента",
+                "service_button": "Обсудить проект",
+                "service_link": "#request",
+                "service_order": "1",
+                "service_badge": "Надёжное основание",
+                "service_extra_label": "Условия работ",
+                "service_extra_value": "По договору"
+            },
+            "image_asset": "service-build.jpg"
+        },
+        {
+            "source_key": "strojka-9",
+            "type": "strojka_service",
+            "slug": "%d0%b1%d0%bb%d0%b0%d0%b3%d0%be%d1%83%d1%81%d1%82%d1%80%d0%be%d0%b9%d1%81%d1%82%d0%b2%d0%be-%d1%83%d1%87%d0%b0%d1%81%d1%82%d0%ba%d0%b0",
+            "title": "Благоустройство участка",
+            "content": "",
+            "order": 2,
+            "meta": {
+                "service_tag": "Территория",
+                "service_description": "Продумываем каждый метр пространства вокруг дома.",
+                "service_features": "Мощение дорожек и площадок\nДренаж и водоотведение\nОбустройство территории",
+                "service_button": "Обсудить проект",
+                "service_link": "#request",
+                "service_order": "2",
+                "service_badge": "Комплексное решение",
+                "service_extra_label": "Условия работ",
+                "service_extra_value": "По договору"
+            },
+            "image_asset": "service-garden.jpg"
+        },
+        {
+            "source_key": "strojka-22",
+            "type": "strojka_fact",
+            "slug": "%d0%b3%d0%b5%d0%be%d0%b3%d1%80%d0%b0%d1%84%d0%b8%d1%8f-%d1%82%d1%80%d0%b5%d1%81%d1%82%d0%b0",
+            "title": "География треста",
+            "content": "",
+            "order": 0,
+            "meta": {
+                "fact_value": "420+",
+                "fact_subtitle": "Сданных объектов",
+                "fact_description": "Заокский, Ясногорск, Алексин, Щёкино, Венёв, Новомосковск.",
+                "fact_icon": "building",
+                "fact_serif": "0",
+                "fact_order": "0"
+            }
+        },
+        {
+            "source_key": "strojka-23",
+            "type": "strojka_fact",
+            "slug": "%d0%bc%d0%b0%d1%88%d0%b8%d0%bd%d0%bd%d1%8b%d0%b9-%d1%84%d0%be%d0%bd%d0%b4",
+            "title": "Машинный фонд",
+            "content": "",
+            "order": 1,
+            "meta": {
+                "fact_value": "18 ЕД.",
+                "fact_subtitle": "Своя спецтехника",
+                "fact_description": "Экскаваторы, виброкатки, автовышки 22 м, самосвалы и песковозы.",
+                "fact_icon": "machine",
+                "fact_serif": "1",
+                "fact_order": "1"
+            }
+        },
+        {
+            "source_key": "strojka-24",
+            "type": "strojka_fact",
+            "slug": "%d1%84%d0%b8%d0%bd%d0%b0%d0%bd%d1%81%d0%be%d0%b2%d0%b0%d1%8f-%d0%b1%d1%80%d0%be%d0%bd%d1%8f",
+            "title": "Финансовая броня",
+            "content": "",
+            "order": 2,
+            "meta": {
+                "fact_value": "100%",
+                "fact_subtitle": "Фиксация сметы",
+                "fact_description": "Никаких скрытых расходов, подорожания стройматериалов и наценок в процессе.",
+                "fact_icon": "shield",
+                "fact_serif": "0",
+                "fact_order": "2"
+            }
+        },
+        {
+            "source_key": "strojka-25",
+            "type": "strojka_fact",
+            "slug": "%d1%81%d1%82%d0%b0%d0%bd%d0%b4%d0%b0%d1%80%d1%82%d1%8b-%d1%80%d1%84",
+            "title": "Стандарты РФ",
+            "content": "",
+            "order": 3,
+            "meta": {
+                "fact_value": "ГОСТ /\nСНиП",
+                "fact_subtitle": "Строгий технадзор",
+                "fact_description": "Лабораторный контроль бетона, акты скрытых работ на всех циклах.",
+                "fact_icon": "checklist",
+                "fact_serif": "1",
+                "fact_order": "3"
+            }
+        },
+        {
+            "source_key": "strojka-26",
+            "type": "page",
+            "slug": "vakansii",
+            "title": "Вакансии",
+            "content": "<p>Работа на строительных объектах в Туле и Тульской области.</p><h2>Открытые направления</h2><ul><li>Прорабы — организация и контроль работ на объекте.</li><li>Кровельщики — монтаж и ремонт кровли.</li><li>Монолитчики-бетонщики — устройство фундаментов и монолитных конструкций.</li><li>Арбористы — работы с деревьями и подготовка территории.</li><li>Монтажники деревянных конструкций — сборка и монтаж конструкций из дерева.</li></ul><h2>Как откликнуться</h2><p>Укажите вашу специальность и опыт в форме отклика на главной странице.</p><p><a href=\"{{SITE_URL}}/#careers\">Перейти к форме отклика</a></p>",
+            "order": 0,
+            "meta": []
+        }
+    ],
+    "theme_mods": {
+        "strojka_phone": "+7 (4872) 75-30-20",
+        "strojka_region": "Тула и Тульская область"
+    },
+    "menu": [
+        {
+            "title": "Услуги",
+            "url": "{{SITE_URL}}/#services"
+        },
+        {
+            "title": "Как работаем",
+            "url": "{{SITE_URL}}/#approach"
+        },
+        {
+            "title": "Расчёт стоимости",
+            "url": "{{SITE_URL}}/#request"
+        }
+    ]
+}

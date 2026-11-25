@@ -1,0 +1,1 @@
+<?php get_header(); ?><main id="main" class="wrap page-content"><?php if (have_posts()): while (have_posts()): the_post(); ?><article><h1><?php the_title(); ?></h1><?php the_content(); ?></article><?php endwhile; else: ?><h1>Страница не найдена</h1><p><a href="<?php echo esc_url(home_url('/')); ?>">Вернуться на главную</a></p><?php endif; ?></main><?php get_footer(); ?>

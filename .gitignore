@@ -1,0 +1,19 @@
+# Track project sources; install WordPress and ACF separately.
+/*
+!/.gitignore
+!/.gitattributes
+!/README.md
+!/start-local.ps1
+!/router.php
+!/check-local.py
+!/check-carousel.py
+!/.local-tools/
+!/wp-content/
+/wp-content/*
+!/wp-content/themes/
+/wp-content/themes/*
+!/wp-content/themes/strojka/
+/.local-tools/*.png
+/.local-tools/__pycache__/
+**/__pycache__/
+*.pyc

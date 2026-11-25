@@ -1,0 +1,10 @@
+<?php if (!defined('ABSPATH')) { exit; } ?>
+<!doctype html><html <?php language_attributes(); ?>><head><meta charset="<?php bloginfo('charset'); ?>"><meta name="viewport" content="width=device-width, initial-scale=1"><?php wp_head(); ?></head><body <?php body_class(); ?>><?php wp_body_open(); ?>
+<a class="screen-reader-text" href="#main">Перейти к содержимому</a>
+<header class="site-header"><div class="wrap"><div class="site-header-top">
+<a class="site-brand" href="<?php echo esc_url(home_url('/')); ?>"><span class="site-brand-mark">Т</span><span><strong><?php echo esc_html(get_theme_mod('strojka_brand', 'ТУЛАСТРОЙГРУПП')); ?></strong><small><?php echo esc_html(get_theme_mod('strojka_tagline', 'Строительный трест Тулы и ТО')); ?></small></span></a>
+<div class="site-meta"><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2"/></svg><?php echo esc_html(get_theme_mod('strojka_address', 'г. Тула, ул. Советская 47')); ?></span><span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 2"/></svg><?php echo esc_html(get_theme_mod('strojka_hours', 'Ежедневно 8:00 – 21:00')); ?></span></div>
+<?php $phone = get_theme_mod('strojka_phone', '+7 (4872) 75-30-20'); ?><a class="site-phone" href="tel:<?php echo esc_attr(preg_replace('/[^+0-9]/', '', $phone)); ?>"><?php echo esc_html($phone); ?><small><?php echo esc_html(get_theme_mod('strojka_phone_note', 'Прямая линия инженеров')); ?></small></a>
+<a class="button header-cta" href="<?php echo esc_url(home_url('/#request')); ?>">Вызвать замерщика</a></div>
+<div class="site-header-bottom"><nav class="site-nav" aria-label="Основное меню"><?php wp_nav_menu(['theme_location' => 'primary', 'container' => false, 'menu_class' => 'primary-menu', 'fallback_cb' => false]); ?></nav><span class="engineer-status"><i></i><?php echo esc_html(get_theme_mod('strojka_availability', 'Дежурный инженер на связи')); ?></span></div>
+</div></header>
